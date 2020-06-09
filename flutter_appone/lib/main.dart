@@ -20,7 +20,13 @@ class Home extends StatelessWidget {
             Colors.red[600], // ctrl-q doesn't bring up a list of colors
       ),
       body: Center(
-        child: Text(
+        child: Image.asset('assets/477.jpg'),
+         /* (
+            image: AssetImage('assets/484.JPG'),
+          // using a link
+          //image: NetworkImage('https://images.unsplash.com/photo-1448227922836-6d05b3f8b663?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80')
+        )*/
+        /*Text(
           'In the body',
           style: TextStyle(
             fontSize: 20.0,
@@ -29,7 +35,7 @@ class Home extends StatelessWidget {
             color: Colors.grey[800],
             fontFamily: 'IndieFlower',
           ),
-        ),
+        ),*/
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {}, // onPressed is required for a button action
