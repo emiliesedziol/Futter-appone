@@ -20,7 +20,35 @@ class Home extends StatelessWidget {
             Colors.red[600], // ctrl-q doesn't bring up a list of colors
       ),
       body: Center(
-        child: Image.asset('assets/477.jpg'),
+        child: IconButton(
+          onPressed: () {
+            print('Why did you click me');
+          },
+          icon: Icon(Icons.alternate_email),
+          color: Colors.amber,
+
+        ),
+        /*RaisedButton.icon(
+          onPressed: () {},
+          icon: Icon(
+            Icons.mail
+          ),
+            label: Text('mail link'),
+            color: Colors.amber
+        ),*/
+        /*RaisedButton(
+          onPressed: () {
+            print('The button was clicked')
+          },
+          child: Text('Click'),
+          color: Colors.blue,
+        ),*/
+        /*Icon(
+          Icons.airport_shuttle,
+          color: Colors.red,
+          size: 100.0,
+        ),*/
+        // Image.asset('assets/477.jpg'),
          /* (
             image: AssetImage('assets/484.JPG'),
           // using a link
