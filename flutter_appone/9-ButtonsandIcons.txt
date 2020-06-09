@@ -1,0 +1,76 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(MaterialApp(
+
+    home: Home()
+  ));
+// statless widget is needed to refresh the virtual device
+
+// to get this 'stless' - need to enter all the characters of it will be wrong
+
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('app one'),
+        centerTitle: true,
+        backgroundColor:
+            Colors.red[600], // ctrl-q doesn't bring up a list of colors
+      ),
+      body: Center(
+        child: IconButton(
+          onPressed: () {
+            print('Why did you click me');
+          },
+          icon: Icon(Icons.alternate_email),
+          color: Colors.amber,
+
+        ),
+        /*RaisedButton.icon(
+          onPressed: () {},
+          icon: Icon(
+            Icons.mail
+          ),
+            label: Text('mail link'),
+            color: Colors.amber
+        ),*/
+        /*RaisedButton(
+          onPressed: () {
+            print('The button was clicked')
+          },
+          child: Text('Click'),
+          color: Colors.blue,
+        ),*/
+        /*Icon(
+          Icons.airport_shuttle,
+          color: Colors.red,
+          size: 100.0,
+        ),*/
+        // Image.asset('assets/477.jpg'),
+         /* (
+            image: AssetImage('assets/484.JPG'),
+          // using a link
+          //image: NetworkImage('https://images.unsplash.com/photo-1448227922836-6d05b3f8b663?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80')
+        )*/
+        /*Text(
+          'In the body',
+          style: TextStyle(
+            fontSize: 20.0,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 2.0,
+            color: Colors.grey[800],
+            fontFamily: 'IndieFlower',
+          ),
+        ),*/
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {}, // onPressed is required for a button action
+        child: Text('Click!'),
+        backgroundColor: Colors.red[800],
+      ),
+      // this has changed
+    );
+  }
+}
